@@ -6,20 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <input id="num1">
-    <input id="num2">
-    <button id="sumar">sumar</button>
-    <p id="id"></p>
+    <input  type="number" id="num1">
+    <input  type="number" id="num2">
+    <button id="button">sumar</button>
+    <p id="parrafo"></p>
 
 </body>
 <script>
-    const id = document.getElementById("id")
-    const a = Number(document.getElementById("num1").value)
-    const b = Number(document.getElementById("num2").value)
+    const parrafo = document.getElementById("parrafo")
     const button = document.getElementById("button")
     button.addEventListener("click", function(){
+        const a = Number(document.getElementById("num1").value)
+        const b = Number(document.getElementById("num2").value)
         let suma = a + b
-        id.innerHTML ="la suma es" + suma 
+        parrafo.innerHTML ="la suma es " + suma 
         
     })
 </script>
