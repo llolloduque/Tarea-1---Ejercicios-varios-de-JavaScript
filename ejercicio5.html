@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="nombre" >
+    <button id="button">mostrar</button>
+    <p id="parrafo"></p>
+</body>
+<script>
+    const button = document.getElementById("button")
+    const parrafo = document.getElementById("parrafo")
+    const input = document.getElementById("nombre")
+    button.addEventListener("click",function(){
+    const valor = input.value 
+    parrafo.innerHTML = "hola, " + valor 
+    })
+</script>
+</html>

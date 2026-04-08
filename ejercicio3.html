@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button id="button">contador</button> 
+   <p id="resultado"></p>
+</body>
+<script>
+    let contador = 0
+    const resultado = document.getElementById("resultado")
+    const button = document.getElementById("button")
+    button.addEventListener("click", function(){
+    contador = contador +1
+    resultado.innerHTML = contador
+    })
+</script>
+</html>
